@@ -18,14 +18,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId={{AurorasBezelPaciente}}&lang=es",
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId={{FernandoPaciente}}&lang=es",
 							"host": [
 								"{{CentinelaApiBaseUrl}}medical-assessment"
 							],
 							"query": [
 								{
 									"key": "cId",
-									"value": "{{AurorasBezelPaciente}}"
+									"value": "{{FernandoPaciente}}"
 								},
 								{
 									"key": "lang",
@@ -200,7 +200,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "07fbca36-cbb4-492a-9f31-0439b790402c",
+				"id": "31540c99-a24d-4da9-b890-4e10633db7c8",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -212,7 +212,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "300fb0df-f54e-412f-98f5-52faed3fdd9e",
+				"id": "26fc7dab-fde3-4143-9e41-a6f531291623",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -220,20 +220,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "FernandoPaciente",
-			"value": ""
-		},
-		{
-			"key": "JackelinePaciente",
-			"value": ""
-		},
-		{
-			"key": "AurorasBezelPaciente",
-			"value": ""
 		}
 	]
 }
