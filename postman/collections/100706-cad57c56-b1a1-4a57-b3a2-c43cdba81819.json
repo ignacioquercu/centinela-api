@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "100706-cad57c56-b1a1-4a57-b3a2-c43cdba81819",
+		"name": "SanaSana - Centienla",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medical Assessment",
+			"item": [
+				{
+					"name": "Get Medical Assessment",
+					"id": "100706-2ee32067-5bee-4401-ae75-364be9bd43be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId={{AurorasBezelPaciente}}&lang=es",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-assessment"
+							],
+							"query": [
+								{
+									"key": "cId",
+									"value": "{{AurorasBezelPaciente}}"
+								},
+								{
+									"key": "lang",
+									"value": "es"
+								}
+							]
+						},
+						"description": "Este endpoint permite obtener la lista de **evaluaciones médicas (Medical Assessments)** o **consultas clínicas** asociadas a un paciente.\n\nEl sistema utiliza el identificador del paciente proveniente del **CRM Dynamics** (`cId`) para consultar la información correspondiente en el **HIS (Hospital Information System)**.\n\nEl parámetro `lang` define el **idioma del reporte PDF** generado posteriormente mediante el endpoint `/medical-assessment/document`."
+					},
+					"response": []
+				},
+				{
+					"name": "Download Medical Assessment (PDF)",
+					"id": "100706-ebb44702-644e-404c-b4ba-334f9b3083a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment/document?cId={{AurorasBezelPaciente}}&mId=4c499563-85d5-4a9e-bf79-3f8cda2dca6b&lang=es",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-assessment"
+							],
+							"path": [
+								"document"
+							],
+							"query": [
+								{
+									"key": "cId",
+									"value": "{{AurorasBezelPaciente}}"
+								},
+								{
+									"key": "mId",
+									"value": "4c499563-85d5-4a9e-bf79-3f8cda2dca6b"
+								},
+								{
+									"key": "lang",
+									"value": "es"
+								}
+							]
+						},
+						"description": "Este endpoint permite **descargar el archivo PDF** correspondiente a una evaluación médica específica del paciente.  \n  \nEl recurso se obtiene a partir del identificador de paciente (`cId`) proveniente del **CRM Dynamics** y el identificador de la evaluación médica (`mId`) registrada en el **HIS (Hospital Information System)**.\n\nEl idioma del reporte se define mediante el parámetro `lang`, que permite generar el documento en el idioma solicitado (por ejemplo, español o inglés)."
+					},
+					"response": []
+				}
+			],
+			"id": "100706-fa236024-e80a-4934-aec7-8712fb84fd90",
+			"description": "El módulo **Medical Assessment** agrupa los endpoints relacionados con la **consulta y generación de evaluaciones médicas** de pacientes dentro del sistema HIS (Hospital Information System).\n\nSu función principal es permitir la **obtención de las evaluaciones clínicas** vinculadas a un paciente registrado en el **CRM Dynamics**, así como la **descarga de los reportes médicos en formato PDF**, generados dinámicamente desde el HIS según el idioma solicitado.\n\nEste módulo facilita la integración entre el CRM y el HIS, brindando acceso centralizado a la información médica histórica del paciente y garantizando que los profesionales de salud o áreas administrativas puedan consultar o generar reportes actualizados desde un único punto.\n\n### Funcionalidades principales\n\n- **Consulta de evaluaciones médicas:** Permite obtener la lista de consultas o valoraciones médicas asociadas a un paciente, utilizando como referencia su identificador en el CRM Dynamics.\n    \n- **Descarga de reportes clínicos (PDF):** Genera y descarga el informe médico correspondiente a una evaluación específica, en el idioma definido por el parámetro `lang`.\n    \n- **Integración CRM–HIS:** Facilita el acceso a la información médica del paciente registrada en el HIS directamente desde los datos vinculados en el CRM SanaSana."
+		},
+		{
+			"name": "PatientAffiliate",
+			"item": [
+				{
+					"name": "ExecuteCommand",
+					"id": "100706-ed04647b-4e4c-4863-974a-8836a5446fbd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin\": \"CRM - SanaSana\",\r\n    \"type\": \"CREATE\",\r\n    \"data\": \"{\\\"firstName\\\":\\\"Carlos Andrés\\\",\\\"lastName\\\":\\\"Jiménez Mora\\\",\\\"identificationType\\\":\\\"Cédula de Identidad\\\",\\\"identificationNumber\\\":\\\"1-0923-4567\\\",\\\"email\\\":\\\"carlos.jimenez.test@example.com\\\",\\\"phone\\\":\\\"+506 71023489\\\",\\\"birthDate\\\":\\\"1992-05-14T00:00:00Z\\\",\\\"genderType\\\":\\\"Hombre\\\",\\\"maritalStatusType\\\":\\\"Soltero\\\",\\\"nationalityType\\\":\\\"Costa Rica\\\",\\\"address\\\":\\\"San José, Escazú, cerca del Country Club\\\",\\\"city\\\":\\\"San José\\\",\\\"role\\\":\\\"Dependiente\\\",\\\"status\\\":\\\"Active\\\",\\\"contactId\\\":\\\"f14be7b2-2a93-4f8e-ae81-cc9f62c3f01d\\\"}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}patient-affiliate/execute-command",
+							"host": [
+								"{{CentinelaApiBaseUrl}}patient-affiliate"
+							],
+							"path": [
+								"execute-command"
+							]
+						},
+						"description": "Este endpoint permite **crear o actualizar la información de un paciente afiliado** en el sistema HIS (Hospital Information System) a partir de los datos registrados o modificados en el **CRM SanaSana**.\n\nEl mismo recurso es utilizado tanto para registrar nuevos pacientes como para actualizar información existente, dependiendo del valor del parámetro `type`.  \n  \nEsto asegura la sincronización de datos entre el CRM y el HIS, manteniendo actualizados los registros de pacientes afiliados."
+					},
+					"response": []
+				}
+			],
+			"id": "100706-b8da5ddc-8d2d-4a8b-a983-5d2d6d4eebe0",
+			"description": "El módulo **PatientAffiliate** agrupa los endpoints responsables de la **sincronización de pacientes afiliados** entre el **CRM SanaSana** y el **HIS (Hospital Information System)**.\n\nSu propósito principal es asegurar que toda la información registrada o actualizada en el CRM —como datos personales, información de contacto, estado del afiliado o su relación con el titular— se refleje correctamente en el sistema HIS.\n\nDe esta forma, se mantiene una **integración bidireccional y consistente** entre ambos sistemas, permitiendo una gestión unificada de pacientes y evitando duplicidades o inconsistencias de datos.\n\n### Funcionalidades principales\n\n- **Creación de pacientes afiliados**: Permite registrar en el HIS los pacientes que se inscriben o son creados desde el CRM.\n    \n- **Actualización de datos existentes**: Sincroniza cambios de información realizados en el CRM (por ejemplo, dirección, teléfono o correo electrónico).\n    \n- **Trazabilidad de origen**: Cada operación registra su origen (`CRM - SanaSana`), lo que permite identificar la fuente de actualización."
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "{{CentinelaAuthClientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{CentinelaAuthClientId}}",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "{{CentinelaAuthScope}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{CentinelaAuthBaseUrl}}",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenName",
+				"value": "Centinela",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "1q2w3E*",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://localhost:44360/connect/authorize",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "89f709f5-8853-4bc7-b63f-c156a2c3b4b7",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "16cb78fd-abbb-405a-9e26-7745acba2ad9",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "CentinelaAuthClientSecret",
+			"value": ""
+		},
+		{
+			"key": "CentinelaAuthScope",
+			"value": ""
+		},
+		{
+			"key": "CentinelaAuthClientId",
+			"value": ""
+		},
+		{
+			"key": "FernandoPaciente",
+			"value": ""
+		},
+		{
+			"key": "JackelinePaciente",
+			"value": ""
+		},
+		{
+			"key": "AurorasBezelPaciente",
+			"value": ""
+		}
+	]
+}
