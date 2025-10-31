@@ -200,7 +200,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "89f709f5-8853-4bc7-b63f-c156a2c3b4b7",
+				"id": "07fbca36-cbb4-492a-9f31-0439b790402c",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -212,7 +212,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "16cb78fd-abbb-405a-9e26-7745acba2ad9",
+				"id": "300fb0df-f54e-412f-98f5-52faed3fdd9e",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -223,18 +223,6 @@
 		}
 	],
 	"variable": [
-		{
-			"key": "CentinelaAuthClientSecret",
-			"value": ""
-		},
-		{
-			"key": "CentinelaAuthScope",
-			"value": ""
-		},
-		{
-			"key": "CentinelaAuthClientId",
-			"value": ""
-		},
 		{
 			"key": "FernandoPaciente",
 			"value": ""
