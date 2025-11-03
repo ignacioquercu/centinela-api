@@ -82,7 +82,20 @@
 			"item": [
 				{
 					"name": "Contacts",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "100706-f166ded2-2176-4ecb-8d20-c7d1fb9bdebd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "100706-66050096-94f5-437b-af35-a585609b81b2"
 				}
 			],
