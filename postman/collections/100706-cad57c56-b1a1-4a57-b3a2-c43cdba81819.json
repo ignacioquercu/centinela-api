@@ -79,7 +79,13 @@
 		},
 		{
 			"name": "Medical History",
-			"item": [],
+			"item": [
+				{
+					"name": "Contacts",
+					"item": [],
+					"id": "100706-66050096-94f5-437b-af35-a585609b81b2"
+				}
+			],
 			"id": "100706-208672fd-f77b-4a0a-b599-dde81d47c552"
 		}
 	],
