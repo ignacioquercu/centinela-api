@@ -76,6 +76,11 @@
 			],
 			"id": "100706-fa236024-e80a-4934-aec7-8712fb84fd90",
 			"description": "El módulo **Medical Assessment** agrupa los endpoints relacionados con la **consulta y generación de evaluaciones médicas** de pacientes dentro del sistema HIS (Hospital Information System).\n\nSu función principal es permitir la **obtención de las evaluaciones clínicas** vinculadas a un paciente registrado en el **CRM Dynamics**, así como la **descarga de los reportes médicos en formato PDF**, generados dinámicamente desde el HIS según el idioma solicitado.\n\nEste módulo facilita la integración entre el CRM y el HIS, brindando acceso centralizado a la información médica histórica del paciente y garantizando que los profesionales de salud o áreas administrativas puedan consultar o generar reportes actualizados desde un único punto.\n\n### Funcionalidades principales\n\n- **Consulta de evaluaciones médicas:** Permite obtener la lista de consultas o valoraciones médicas asociadas a un paciente, utilizando como referencia su identificador en el CRM Dynamics.\n    \n- **Descarga de reportes clínicos (PDF):** Genera y descarga el informe médico correspondiente a una evaluación específica, en el idioma definido por el parámetro `lang`.\n    \n- **Integración CRM–HIS:** Facilita el acceso a la información médica del paciente registrada en el HIS directamente desde los datos vinculados en el CRM SanaSana."
+		},
+		{
+			"name": "Medical History",
+			"item": [],
+			"id": "100706-208672fd-f77b-4a0a-b599-dde81d47c552"
 		}
 	],
 	"auth": {
