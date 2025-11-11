@@ -47,7 +47,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}medical-assessment/document?cId={{AurorasBezelPaciente}}&mId=4c499563-85d5-4a9e-bf79-3f8cda2dca6b&lang=es",
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment/document?cId={{AurorasBezelPaciente}}&mIde=4c499563-85d5-4a9e-bf79-3f8cda2dca6b&lang=en",
 							"host": [
 								"{{CentinelaApiBaseUrl}}medical-assessment"
 							],
@@ -60,12 +60,12 @@
 									"value": "{{AurorasBezelPaciente}}"
 								},
 								{
-									"key": "mId",
+									"key": "mIde",
 									"value": "4c499563-85d5-4a9e-bf79-3f8cda2dca6b"
 								},
 								{
 									"key": "lang",
-									"value": "es"
+									"value": "en"
 								}
 							]
 						},
