@@ -100,6 +100,35 @@
 				}
 			],
 			"id": "100706-208672fd-f77b-4a0a-b599-dde81d47c552"
+		},
+		{
+			"name": "New Request",
+			"id": "100706-d6037fcf-e843-4e81-962d-df926df7ef6a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sanasana.centinela.qmedicos.com:444/api/app/patient-affiliate/execute-command",
+					"protocol": "https",
+					"host": [
+						"sanasana",
+						"centinela",
+						"qmedicos",
+						"com"
+					],
+					"port": "444",
+					"path": [
+						"api",
+						"app",
+						"patient-affiliate",
+						"execute-command"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
