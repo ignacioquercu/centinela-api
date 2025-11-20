@@ -102,6 +102,11 @@
 			"id": "100706-208672fd-f77b-4a0a-b599-dde81d47c552"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "100706-7342cb56-976f-4adb-ae10-756aec01b041"
+		},
+		{
 			"name": "Paciente Afiliado",
 			"id": "100706-d6037fcf-e843-4e81-962d-df926df7ef6a",
 			"protocolProfileBehavior": {
