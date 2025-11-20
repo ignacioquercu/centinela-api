@@ -110,6 +110,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"origin\": \"CRM - SanaSana\",\r\n  \"type\": \"UPDATE\",\r\n  \"data\": \"{\\\"firstName\\\":\\\"IGNACIO\\\",\\\"lastName\\\":\\\"VALERIO VEGA\\\",\\\"identificationType\\\":\\\"Cédula de identidad\\\",\\\"identificationNumber\\\":\\\"206910083\\\",\\\"email\\\":\\\"ignacio@quercu.com\\\",\\\"phone\\\":\\\"+50685897154\\\",\\\"birthDate\\\":\\\"1991-08-28\\\",\\\"genderType\\\":\\\"Hombre\\\",\\\"maritalStatusType\\\":\\\"Casado/a\\\",\\\"nationalityType\\\":\\\"52\\\",\\\"address\\\":\\\"700 metros norte\\\\r\\\\nQuesada\\\",\\\"city\\\":\\\"Quesada\\\",\\\"role\\\":\\\"Titular\\\",\\\"status\\\":\\\"Activo\\\",\\\"contactId\\\":\\\"98efdc6a-4abb-f011-bbd3-00224821ec3b\\\"}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://sanasana.centinela.qmedicos.com:444/api/app/patient-affiliate/execute-command",
 					"protocol": "https",
