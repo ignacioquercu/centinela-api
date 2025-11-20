@@ -81,68 +81,73 @@
 			"name": "Medical History",
 			"item": [
 				{
-					"name": "Contacts",
-					"item": [
-						{
-							"name": "New Request",
-							"id": "100706-f166ded2-2176-4ecb-8d20-c7d1fb9bdebd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
+					"name": "Create",
+					"id": "100706-680cb718-4f44-495d-be51-f3642cc54c93",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-history/execute-command/98efdc6a-4abb-f011-bbd3-00224821ec3b",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-history"
+							],
+							"path": [
+								"execute-command",
+								"98efdc6a-4abb-f011-bbd3-00224821ec3b"
+							]
 						}
-					],
-					"id": "100706-66050096-94f5-437b-af35-a585609b81b2"
+					},
+					"response": []
 				}
 			],
 			"id": "100706-208672fd-f77b-4a0a-b599-dde81d47c552"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
-			"id": "100706-7342cb56-976f-4adb-ae10-756aec01b041"
-		},
-		{
 			"name": "Paciente Afiliado",
-			"id": "100706-d6037fcf-e843-4e81-962d-df926df7ef6a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"origin\": \"CRM - SanaSana\",\r\n  \"type\": \"UPDATE\",\r\n  \"data\": \"{\\\"firstName\\\":\\\"IGNACIO\\\",\\\"lastName\\\":\\\"VALERIO VEGA\\\",\\\"identificationType\\\":\\\"Cédula de identidad\\\",\\\"identificationNumber\\\":\\\"206910083\\\",\\\"email\\\":\\\"ignacio@quercu.com\\\",\\\"phone\\\":\\\"+50685897154\\\",\\\"birthDate\\\":\\\"1991-08-28\\\",\\\"genderType\\\":\\\"Hombre\\\",\\\"maritalStatusType\\\":\\\"Casado/a\\\",\\\"nationalityType\\\":\\\"52\\\",\\\"address\\\":\\\"700 metros norte\\\\r\\\\nQuesada\\\",\\\"city\\\":\\\"Quesada\\\",\\\"role\\\":\\\"Titular\\\",\\\"status\\\":\\\"Activo\\\",\\\"contactId\\\":\\\"98efdc6a-4abb-f011-bbd3-00224821ec3b\\\"}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"item": [
+				{
+					"name": "Execute Command",
+					"id": "100706-d6037fcf-e843-4e81-962d-df926df7ef6a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"origin\": \"CRM - SanaSana\",\r\n  \"type\": \"UPDATE\",\r\n  \"data\": \"{\\\"firstName\\\":\\\"IGNACIO\\\",\\\"lastName\\\":\\\"VALERIO VEGA\\\",\\\"identificationType\\\":\\\"Cédula de identidad\\\",\\\"identificationNumber\\\":\\\"206910083\\\",\\\"email\\\":\\\"ignacio@quercu.com\\\",\\\"phone\\\":\\\"+50685897154\\\",\\\"birthDate\\\":\\\"1991-08-28\\\",\\\"genderType\\\":\\\"Hombre\\\",\\\"maritalStatusType\\\":\\\"Casado/a\\\",\\\"nationalityType\\\":\\\"52\\\",\\\"address\\\":\\\"700 metros norte\\\\r\\\\nQuesada\\\",\\\"city\\\":\\\"Quesada\\\",\\\"role\\\":\\\"Titular\\\",\\\"status\\\":\\\"Activo\\\",\\\"contactId\\\":\\\"98efdc6a-4abb-f011-bbd3-00224821ec3b\\\"}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sanasana.centinela.qmedicos.com:444/api/app/patient-affiliate/execute-command",
+							"protocol": "https",
+							"host": [
+								"sanasana",
+								"centinela",
+								"qmedicos",
+								"com"
+							],
+							"port": "444",
+							"path": [
+								"api",
+								"app",
+								"patient-affiliate",
+								"execute-command"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "https://sanasana.centinela.qmedicos.com:444/api/app/patient-affiliate/execute-command",
-					"protocol": "https",
-					"host": [
-						"sanasana",
-						"centinela",
-						"qmedicos",
-						"com"
-					],
-					"port": "444",
-					"path": [
-						"api",
-						"app",
-						"patient-affiliate",
-						"execute-command"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"id": "100706-7342cb56-976f-4adb-ae10-756aec01b041"
 		}
 	],
 	"auth": {
