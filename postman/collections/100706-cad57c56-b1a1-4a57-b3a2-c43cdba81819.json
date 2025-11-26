@@ -216,14 +216,29 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Tipo de Identificación",
 					"id": "100706-b88ac9b9-7533-49bd-bdd1-34b09d494fa3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}catalog/identification-type?lang=en",
+							"host": [
+								"{{CentinelaApiBaseUrl}}catalog"
+							],
+							"path": [
+								"identification-type"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "en"
+								}
+							]
+						}
 					},
 					"response": []
 				}
