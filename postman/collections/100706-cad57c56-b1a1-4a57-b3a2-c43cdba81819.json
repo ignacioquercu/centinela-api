@@ -241,6 +241,60 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Tipo de Genero",
+					"id": "100706-592e4829-6b68-4fce-9744-dd22ed1f0384",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}catalog/gender-type?lang=es",
+							"host": [
+								"{{CentinelaApiBaseUrl}}catalog"
+							],
+							"path": [
+								"gender-type"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "es"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tipo Estado Civil",
+					"id": "100706-fcb9081d-e9f8-4c2b-a2a9-c89e4531a3db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}catalog/civil-status-type?lang=es",
+							"host": [
+								"{{CentinelaApiBaseUrl}}catalog"
+							],
+							"path": [
+								"civil-status-type"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "es"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "100706-9e8ea775-9ed9-4377-b6b6-97bde6c37286"
