@@ -198,16 +198,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:44357/api/app/catalog/nationality-type?lang=es",
-							"protocol": "https",
+							"raw": "{{CentinelaApiBaseUrl}}catalog/nationality-type?lang=es",
 							"host": [
-								"localhost"
+								"{{CentinelaApiBaseUrl}}catalog"
 							],
-							"port": "44357",
 							"path": [
-								"api",
-								"app",
-								"catalog",
 								"nationality-type"
 							],
 							"query": [
@@ -217,6 +212,18 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "100706-b88ac9b9-7533-49bd-bdd1-34b09d494fa3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
