@@ -162,7 +162,7 @@
 			"name": "Medical Appointment",
 			"item": [
 				{
-					"name": "Get All",
+					"name": "GetList",
 					"id": "100706-cb481df1-987e-4b02-b3fd-37207282e5b4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
