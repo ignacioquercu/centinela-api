@@ -187,7 +187,40 @@
 		},
 		{
 			"name": "Catalogos",
-			"item": [],
+			"item": [
+				{
+					"name": "Tipo de Nacionalidades",
+					"id": "100706-3b6d7b1c-f490-408a-9906-0d31b22e339f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44357/api/app/catalog/nationality-type?lang=es",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44357",
+							"path": [
+								"api",
+								"app",
+								"catalog",
+								"nationality-type"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "es"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "100706-9e8ea775-9ed9-4377-b6b6-97bde6c37286"
 		}
 	],
