@@ -159,8 +159,30 @@
 			"id": "100706-7342cb56-976f-4adb-ae10-756aec01b041"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "Medical Appointment",
+			"item": [
+				{
+					"name": "Get All",
+					"id": "100706-cb481df1-987e-4b02-b3fd-37207282e5b4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-appointment/list",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-appointment"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "100706-36f3da2c-f010-47a6-ba69-f7c3b6031a94"
 		}
 	],
