@@ -18,14 +18,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId=5b92f7a5-5d61-ef11-bfe2-6045bdecabf2&lang=es",
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId=fbeee588-5d2c-f011-8c4d-000d3a9d695a&lang=es",
 							"host": [
 								"{{CentinelaApiBaseUrl}}medical-assessment"
 							],
 							"query": [
 								{
 									"key": "cId",
-									"value": "5b92f7a5-5d61-ef11-bfe2-6045bdecabf2"
+									"value": "fbeee588-5d2c-f011-8c4d-000d3a9d695a"
 								},
 								{
 									"key": "lang",
