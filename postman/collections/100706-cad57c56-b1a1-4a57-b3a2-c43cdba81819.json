@@ -112,7 +112,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Get (Contact Id)",
 					"id": "100706-401e9abd-c85a-4d81-8e99-e9ee6d1761be",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
