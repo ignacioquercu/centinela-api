@@ -119,7 +119,17 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-history/contact/98efdc6a-4abb-f011-bbd3-00224821ec3b",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-history"
+							],
+							"path": [
+								"contact",
+								"98efdc6a-4abb-f011-bbd3-00224821ec3b"
+							]
+						}
 					},
 					"response": []
 				}
