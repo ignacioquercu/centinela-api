@@ -205,7 +205,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "TriggerDynamicsProcess",
 					"id": "100706-987d9517-835e-464e-8306-0590d0e4e255",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
