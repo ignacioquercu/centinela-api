@@ -18,14 +18,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId=fbeee588-5d2c-f011-8c4d-000d3a9d695a&lang=es",
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment?cId=5b92f7a5-5d61-ef11-bfe2-6045bdecabf2&lang=es",
 							"host": [
 								"{{CentinelaApiBaseUrl}}medical-assessment"
 							],
 							"query": [
 								{
 									"key": "cId",
-									"value": "fbeee588-5d2c-f011-8c4d-000d3a9d695a"
+									"value": "5b92f7a5-5d61-ef11-bfe2-6045bdecabf2"
 								},
 								{
 									"key": "lang",
@@ -47,7 +47,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}medical-assessment/document?cId={{AurorasBezelPaciente}}&mId=4c499563-85d5-4a9e-bf79-3f8cda2dca6b&lang=en",
+							"raw": "{{CentinelaApiBaseUrl}}medical-assessment/document?cId=5b92f7a5-5d61-ef11-bfe2-6045bdecabf2&mId=097940d6-874d-43f9-989a-1b0d4c9d00d9&lang=es",
 							"host": [
 								"{{CentinelaApiBaseUrl}}medical-assessment"
 							],
@@ -57,15 +57,15 @@
 							"query": [
 								{
 									"key": "cId",
-									"value": "{{AurorasBezelPaciente}}"
+									"value": "5b92f7a5-5d61-ef11-bfe2-6045bdecabf2"
 								},
 								{
 									"key": "mId",
-									"value": "4c499563-85d5-4a9e-bf79-3f8cda2dca6b"
+									"value": "097940d6-874d-43f9-989a-1b0d4c9d00d9"
 								},
 								{
 									"key": "lang",
-									"value": "en"
+									"value": "es"
 								}
 							]
 						},
