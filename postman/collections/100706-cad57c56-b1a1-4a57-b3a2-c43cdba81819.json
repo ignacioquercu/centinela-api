@@ -211,8 +211,26 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appointmentId\": \"CD57421E-34C5-422B-1F09-08DDE4B89915\",\r\n  \"tenantId\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}medical-appointment/trigger-dynamics-process",
+							"host": [
+								"{{CentinelaApiBaseUrl}}medical-appointment"
+							],
+							"path": [
+								"trigger-dynamics-process"
+							]
+						}
 					},
 					"response": []
 				}
