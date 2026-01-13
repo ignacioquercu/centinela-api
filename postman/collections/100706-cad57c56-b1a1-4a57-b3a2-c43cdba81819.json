@@ -158,19 +158,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://sanasana.centinela.qmedicos.com:444/api/app/patient-affiliate/execute-command",
-							"protocol": "https",
+							"raw": "{{CentinelaApiBaseUrl}}patient-affiliate/execute-command",
 							"host": [
-								"sanasana",
-								"centinela",
-								"qmedicos",
-								"com"
+								"{{CentinelaApiBaseUrl}}patient-affiliate"
 							],
-							"port": "444",
 							"path": [
-								"api",
-								"app",
-								"patient-affiliate",
 								"execute-command"
 							]
 						}
