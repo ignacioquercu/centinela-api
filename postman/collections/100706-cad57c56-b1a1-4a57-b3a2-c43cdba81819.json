@@ -375,6 +375,16 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
+				"key": "clientSecret",
+				"value": "{{CentinelaAuthClientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{CentinelaAuthClientSecret}}",
+				"type": "string"
+			},
+			{
 				"key": "addTokenTo",
 				"value": "header",
 				"type": "string"
@@ -390,7 +400,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e19cd212-af7f-4030-9408-c8e9218004df",
+				"id": "fc0478cf-3910-43ec-8911-666ad1427ab2",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -402,7 +412,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "6b05eb9e-0a07-4dfa-b222-82849511e2f4",
+				"id": "bf79f01d-208b-4092-af69-e575d4b57477",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
