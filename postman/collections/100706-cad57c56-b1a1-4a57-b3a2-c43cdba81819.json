@@ -375,6 +375,11 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
 				"key": "addTokenTo",
 				"value": "header",
 				"type": "string"
@@ -385,7 +390,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0b0234fc-256a-44e3-b0e5-630adea95909",
+				"id": "450f850b-b856-4492-8963-8203d72c1692",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -397,7 +402,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "38270dff-69f2-470d-b7fb-62c7f8db3029",
+				"id": "937acf14-4909-4a4c-9290-b478edd7438b",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
