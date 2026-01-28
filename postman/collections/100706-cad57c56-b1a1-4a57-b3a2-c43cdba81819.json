@@ -375,6 +375,11 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
+				"key": "accessTokenUrl",
+				"value": "{{CentinelaApiBaseUrl}}",
+				"type": "string"
+			},
+			{
 				"key": "tokenName",
 				"value": "Centinela",
 				"type": "string"
@@ -410,7 +415,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2a159682-3779-4449-883f-e514e9339e6f",
+				"id": "2dd7acae-6466-45bb-919c-f6fc546a86df",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -422,7 +427,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "18fb2dd6-a5a0-4b89-84f4-47b1e3beb3bd",
+				"id": "9fa59918-0a42-4da1-a7ff-faef4efd9e31",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
