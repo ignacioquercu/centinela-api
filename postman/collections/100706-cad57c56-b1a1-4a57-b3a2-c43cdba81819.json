@@ -348,7 +348,22 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{CentinelaApiBaseUrl}}catalog/vaccines-type?lang=en",
+							"host": [
+								"{{CentinelaApiBaseUrl}}catalog"
+							],
+							"path": [
+								"vaccines-type"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "en"
+								}
+							]
+						}
 					},
 					"response": []
 				}
