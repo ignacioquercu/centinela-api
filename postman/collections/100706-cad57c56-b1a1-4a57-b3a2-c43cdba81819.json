@@ -350,7 +350,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{CentinelaApiBaseUrl}}catalog/vaccines-type?lang=en",
+							"raw": "{{CentinelaApiBaseUrl}}catalog/vaccines-type?lang=es",
 							"host": [
 								"{{CentinelaApiBaseUrl}}catalog"
 							],
@@ -360,7 +360,7 @@
 							"query": [
 								{
 									"key": "lang",
-									"value": "en"
+									"value": "es"
 								}
 							]
 						}
