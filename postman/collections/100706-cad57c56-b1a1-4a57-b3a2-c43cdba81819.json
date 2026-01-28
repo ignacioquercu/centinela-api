@@ -375,13 +375,13 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
-				"key": "refreshTokenUrl",
-				"value": "",
+				"key": "accessTokenUrl",
+				"value": "{{CentinelaAuthBaseUrl}}",
 				"type": "string"
 			},
 			{
-				"key": "accessTokenUrl",
-				"value": "{{CentinelaAuthBaseUrl}}",
+				"key": "refreshTokenUrl",
+				"value": "",
 				"type": "string"
 			},
 			{
@@ -420,7 +420,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "12e2fd09-2ebf-407d-8e57-83dff2d76a58",
+				"id": "2b46f46d-80a9-4b2e-989c-031d3822a22d",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -432,7 +432,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f9a2f745-a189-4e89-b184-16c7d6e04aff",
+				"id": "f624e1bb-56f4-4c2c-be34-eb1cb40c99b3",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
