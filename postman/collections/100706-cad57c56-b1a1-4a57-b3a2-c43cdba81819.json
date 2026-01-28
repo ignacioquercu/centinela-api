@@ -376,7 +376,12 @@
 		"oauth2": [
 			{
 				"key": "accessTokenUrl",
-				"value": "{{CentinelaApiBaseUrl}}",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
 				"type": "string"
 			},
 			{
@@ -403,11 +408,6 @@
 				"key": "addTokenTo",
 				"value": "header",
 				"type": "string"
-			},
-			{
-				"key": "grant_type",
-				"value": "client_credentials",
-				"type": "string"
 			}
 		]
 	},
@@ -415,7 +415,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2dd7acae-6466-45bb-919c-f6fc546a86df",
+				"id": "725c9b75-a764-4b13-9b07-156a8981a0d8",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -427,7 +427,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9fa59918-0a42-4da1-a7ff-faef4efd9e31",
+				"id": "b9a0b957-f039-4dd6-afac-a154bc2a8590",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
